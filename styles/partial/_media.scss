@@ -1,0 +1,112 @@
+@use './abstracts/colors';
+@use './abstracts/utils';
+
+@media screen and (max-width: 600px) {
+
+    .main-title {
+        h2 {
+            font-size: 2rem;
+
+            .bg-text {
+                font-size: 3rem;
+            }
+        }
+    }
+
+    header {
+        height: 100%;
+        padding: 0;
+
+        .header-content {
+            grid-template-columns: 1fr;
+            padding-bottom: 6rem;
+
+            .right-header {
+                .name {
+                    font-size: 2rem;
+                }
+            }
+        }
+    }
+
+    .theme-btn {
+        width: 50px;
+        height: 50px;
+    }
+
+    header .right-header {
+        padding: 2rem !important;
+    }
+
+    .controls {
+        top: auto;
+        bottom: 0;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        left: 50%;
+        transform: translateX(-50%);
+        gap: .5em;
+        width: 100%;
+        background: var(--background-color);
+        box-shadow: 0px -2px 8px rgba(0, 0, 0, .2);
+        transition: var(--transition-01-out);
+
+        .control {
+            margin: 1rem .3rem;
+        }
+    }
+
+    .about {
+        .about-container {
+            grid-template-columns: 1fr;
+            gap: 3rem;
+
+            .right {
+                grid-row: 1;
+                grid-template-columns: 1fr;
+                width: 100%;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    }
+
+    .section {
+        padding: 2rem 2.5rem;
+    }
+
+    .portofolios {
+        grid-template-columns: 1fr;
+        padding-bottom: 6rem;
+    }
+
+    .blogs-container {
+        grid-template-columns: 1fr;
+        padding-bottom: 6rem;
+    }
+
+    .contact-content-container {
+        flex-direction: column;
+        gap: 4rem;
+        padding-bottom: 6rem;
+
+        .right-contact {
+            order: 1;
+            margin: 0;
+            
+            .contact-form {
+                justify-content: center;
+                align-items: center;
+            }
+
+            .submit-btn {
+                justify-content: center;
+            }
+        }
+
+        .left-contact {
+            order: 2;
+        }
+    }
+}

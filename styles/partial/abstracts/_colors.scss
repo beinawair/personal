@@ -1,0 +1,18 @@
+$--color-primary: rgb(111, 111, 252);
+$--color-secondary: rgb(212, 119, 212);
+$--color-dark: #232323;
+$--color-white: #ffffff;
+$--color-gray-0: rgb(55, 55, 55);
+$--color-gray-1: rgb(135, 135, 135);
+$--color-gray-2: rgb(171, 171, 171);
+$--color-gray-3: rgb(206, 206, 206);
+$--color-gray-4: rgb(234, 234, 234);
+$--color-gray-5: rgb(246, 246, 246);
+$--color-gradient-1: linear-gradient(45deg, $--color-primary, $--color-secondary);
+
+:root {
+    --background-color: #{$--color-white};
+    --text-color: #{$--color-dark};
+    --accent-color: #{$--color-dark};
+    --title-background: #{$--color-gray-4};
+}
